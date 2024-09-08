@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="icon" href="/images/logo.png" type="image/x-icon")
+    link(rel="stylesheet" href="/css/main.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+  body(class="bg-black")
+    .hero
+     .hero-content.relative.z-10.flex.flex-col.items-center.justify-center.text-white.text-center
+       p(class="  mt-[8vh] md:mt-[16vh] font-bold text-[24px] md:text-[72px] text-white text-nowrap md:leading-[100px]") Your Path To A Digital Revolution <br/> Starts Here!
+       p(class="mt-4 text-md md:text-[36px] text-nowrap md:leading-[48px]") We strive to empower businesses with cutting-edge<br/>solutions, propelling them to new heights of success.
+       button(class="bg-button-color rounded-md mt-[48px] hover:bg-button-hover")
+        a(href="/", class="bg-button-color text-white font-medium text-[24px] text-nowrap px-4 py-2 rounded hover:bg-button-hover hover:shadow-md hover:text-black") Schedule a Call
+       div(class="marquee-container overflow-hidden relative md:mt-28 mt-16 ")
+       div(class="marquee-content flex space-x-8 md:space-x-24 w-full ")
+         each imgSrc in ['image1.png', 'image2.png', 'image3.png', 'image4.png', 'image5.png', 'image6.png', 'image7.png', 'image8.png', 'image9.png','image10.png']
+            img(src=`/images/${imgSrc}`, alt="images" class="md:h-32 md:w-32 w-16 h-16")
+         each imgSrc in ['image1.png', 'image2.png', 'image3.png', 'image4.png', 'image5.png', 'image6.png', 'image7.png', 'image8.png', 'image9.png','image10.png']
+            img(src=`/images/${imgSrc}`, alt="images" class="md:h-32 md:w-32 w-16 h-16")    
+     include partials/navbar
+    .container 
+      main(class="flex-grow") 
+        block content
+    include partials/footer 
+      script(src="/scripts/navbar.js", defer)
+      script(src="/scripts/testimonials.js",defer)
+      script(src="https://kit.fontawesome.com/a076d05399.js")

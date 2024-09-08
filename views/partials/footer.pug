@@ -1,0 +1,37 @@
+footer(class="bg-gray-900 text-gray-200 py-8 relative")
+  .container.mx-auto.px-4 
+    .flex.items-center
+        div(class="flex items-center justify-between absolute bg-gray-800 md:px-8 md:py-4 px-4 py-2 shadow-md top-[-30px] w-[70vw] md:h-[10vh] h-[8vh] left-[50%] translate-x-[-50%] rounded-full")
+            .block 
+                h1.text-xl.font-semibold Let's Talk 
+                p(class="hidden md:block") If you want to talk about your ideas, Reach out to us.
+            button(class=" bg-button-color text-white hover:bg-button-hover hover:text-black px-2 py-1 rounded-md")
+                a(href="/about" class="font-medium text-[16px] text-nowrap") Contact Us
+    .flex.flex-wrap.justify-between.items-center
+      // Company Info
+      div(class="w-full md:w-1/3 mb-4 md:mb-0")
+        img(src="/images/logo.png", alt="company logo", class="w-10 h-10 text-center")
+        h1.text-lg.font-bold.mb-2 Huddle4Tech
+        p Leading your business to success.
+        
+
+      // Footer Navigation
+      div(class="w-full md:w-1/3 mb-4 md:mb-0 flex flex-col justify-between h-full md:self-end")
+        ul(class="flex items-center gap-4 md:justify-end")
+          li.mb-2
+            a(href="/about" class=" text-gray-300 font-medium hover:text-white") About
+          li.mb-2
+            a(href="/services" class="text-gray-300 font-medium hover:text-white") Services
+          li.mb-2
+            a(href="/work" class="text-gray-300 font-medium hover:text-white") Work
+          li.mb-2
+            a(href="/contact" class=" text-gray-300 font-medium hover:text-white") Contact Us
+
+      // Social Media Links
+    div(class="w-full mt-2 md:mt-8 pt-4 border-t border-gray-200 flex items-center justify-between")
+        h2.text-md.font-bold.mb-2 &copy; 2024 Huddle4Tech. All rights reserved.
+        div(class="flex gap-2 justify-end")
+          a(href="#" class="text-gray-300 hover:text-white w-fit")
+            i(class="material-icons") facebook
+          a(href="#" class="text-gray-300 hover:text-white w-fit")
+            i(class="material-icons") mail

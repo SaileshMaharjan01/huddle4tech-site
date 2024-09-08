@@ -1,0 +1,81 @@
+extends layout
+
+block content 
+   div(class="vision-section flex flex-col items-center mt-8 md:mt-20 md:mb-16")
+      p(class="font-bold text-[24px] md:text-[72px] text-white text-center md:leading-[100px] vision-text animate-glow") Our Vision
+   div(class="grid grid-cols-1 md:grid-cols-3 mb-[80px] md:mb-[120px]")
+      div(class="flex justify-center")
+         img(src="/images/vision illustration.png", alt="vision-image" ,class=" w-[100%] h-[60vh] object-cover text-nowrap animate-glow ")
+      div(class="text-white text-start col-span-2")
+         p(class="text-[48px] mb-6 font-semibold") Empowering Innovations
+         p(class="text-[18px] font-medium") Our vision is to revolutionize the digital landscape through innovative solutions. We aspire to be the driving force behind transformative technology,
+           | empowering businesses to thrive in the digital era. Our commitment is to lead with creativity and unwavering dedication to our clients success.
+           <br/><br/>
+           | By fostering collaboration and embracing cutting-edge advancements, we aim to shape a future where technology becomes the catalyst for sustainable growth. With a focus on excellence, 
+           | integrity, and continuous innovation, we strive to deliver impactful results that redefine industry standards
+           <br/><br/>
+           | We believe in pushing boundaries, anticipating challenges, and crafting solutions that not only meet the needs of today but also prepare businesses for the opportunities of tomorrow. 
+           | Together, we build a digital future that inspires confidence and fuels limitless potential.
+   div(class="flex items-center justify-center mb-[120px]")
+      p(class="font-bold text-[24px] md:text-[72px] text-white text-center md:leading-[100px] vision-text animate-glow") We Provide The<br/>Best Services
+   div(class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-[120px]")
+      div(class="text-white rounded-sm bg-gray-900 p-6")
+         .flex.items-center.gap-4
+            img(src="/images/seo.png", alt="seo image")
+            h1(class="text-[16px] md:text-[24px] font-medium") SEO Booster
+         p(class="mt-5 text-[14px] md:text-[16px]") Elevate your online presence with Apexify's 
+         | SEO Booster – tailored strategies for top search engine rankings. Dominate the digital 
+         | realm and drive organic traffic to your website with our expert optimization techniques.<br/>
+         button(class="flex items-center gap-2")
+            a(href="/services", class="mt-5 font-medium") Read More ...
+      div(class="text-white rounded-sm bg-gray-900 p-6")
+         .flex.items-center.gap-4
+            img(src="/images/webdev.png", alt="seo image")
+            h1(class="text-[16px] md:text-[24px] font-medium") Web Development
+         p(class="mt-5 text-[14px] md:text-[16px]") We craft dynamic and user-centric websites that captivate audiences and drive results.Our web development services blend creativity and functionality to elevate your online presence and exceed your digital goals.<br/>
+         button(class="flex items-center gap-2")
+            a(href="/services", class="mt-5 font-medium") Read More ...
+      div(class="text-white rounded-sm bg-gray-900 p-6")
+         .flex.items-center.gap-4
+            img(src="/images/webdesign.png", alt="seo image")
+            h1(class="text-[16px] md:text-[24px] font-medium") Web Design
+         p(class="mt-5 text-[14px] md:text-[16px]") At Huddle4Tech, we create captivating web experiences that merge creativity with functionality. Our designs are tailored to elevate your brand's online presence and captivate your audience. Making one’s product stand out.<br/>
+         button(class="flex items-center gap-2")
+            a(href="/services", class="mt-5 font-medium") Read More ...
+      div(class="text-white rounded-sm bg-gray-900 p-6")
+         .flex.items-center.gap-4
+            img(src="/images/dataanalysis.png", alt="seo image")
+            h1(class="text-[16px] md:text-[24px] font-medium") Data Analysis
+         p(class="mt-5 text-[14px] md:text-[16px]") We harness the power of data analytics to uncover valuable insights and drive informed decisions. Our advanced analytics solutions empower businesses to optimize performance, enhance efficiency, and unlock new opportunities for growth.<br/>
+         button(class="flex items-center gap-2")
+            a(href="/services", class="mt-5 font-medium") Read More ...
+   div(class="mb-[120px] text-center")
+      p(class="font-bold text-[24px] md:text-[72px] text-white text-center md:leading-[100px] vision-text mb-24 animate-glow") Testimonials
+      div(class="grid grid-cols-1 md:grid-cols-2 gap-8")
+         include testimonials 
+         .image-container
+            img#rotating-image(src="path/to/your-first-image.jpg" alt="Rotating Image")
+   div(class="mb-[120px] text-center")
+      p(class="font-bold text-[24px] md:text-[72px] text-white text-center md:leading-[100px] vision-text mb-24 animate-glow") Simple Working Process
+      div(class="realtive")
+         div(class="flex items-center justify-between px-10 mb-6")
+            img(src="/images/formfillup.png", alt="form-image")
+            img(src="/images/meetspecialist.png", alt="form-image")
+            img(src="/images/startproject.png", alt="form-image")
+         div(class="w-[100%] h-1 bg-button-color")
+         div(class="flex items-center justify-between px-0")
+            .flex.flex-col.items-center.justify-center.gap-0
+               img(src="/images/01.png", alt="form-image", class="w-fit h-fit")
+               p(class=" text-white tetx-[16px] md:text-[24px] font-medium mt-0") Fill Out The Form
+            .flex.flex-col.items-center.justify-center.gap-0
+               img(src="/images/02.png", alt="form-image", class="w-fit h-fit")
+               p(class=" text-white tetx-[16px] md:text-[24px] font-medium mt-0") Meet With A Specialist 
+            .flex.flex-col.items-center.justify-center.gap-0
+               img(src="/images/03.png", alt="form-image", class="w-fit h-fit")
+               p(class=" text-white tetx-[16px] md:text-[24px] font-medium mt-0") Start Project
+         
+            
+            
+            
+
+   

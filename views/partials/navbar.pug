@@ -1,0 +1,32 @@
+nav(class="fixed top-0 left-0 right-0 z-50 py-4 transition-transform transform duration-500 bg-gray-900 bg-opacity-50")
+  .container.mx-auto.px-4
+    .flex.items-center.justify-between
+      // Logo and title
+      a(href="/" class="flex items-center space-x-2")
+        img(src="/images/logo.png", alt="Company Logo", class="h-10 w-auto")
+        h1(class="font-bold text-[24px] text-gray-200 hover:text-white animate-glow") Huddle4Tech
+
+      // Mobile menu button
+      button(class="md:hidden flex items-center px-3 py-2 rounded text-gray-300 hover:text-white", id="menu-button")
+        i(class="material-icons") menu
+
+      ul(class="hidden md:flex space-x-8")
+        li
+         a(href="/about", class="text-gray-200 font-medium hover:text-white") About
+        li
+         a(href="/services", class="text-gray-200 font-medium hover:text-white") Services
+        li
+         a(href="/work", class="text-gray-200 font-medium hover:text-white") Work
+        li
+         a(href="/contact", class="bg-button-color text-white font-medium px-4 py-2 rounded hover:bg-button-hover hover:shadow-md hover:text-black") Contact Us
+
+    // Mobile menu items
+    ul(class="md:hidden fixed inset-x-0 top-16 bg-white m-2 rounded shadow-lg z-50 hidden transition-transform duration-200 ease-out transform translate-y-[-100%]", id="mobile-menu")
+      li(class="border-b border-gray-200")
+        a(href="/about", class="block px-4 py-2 text-gray-600 font-medium hover:text-black") About
+      li(class="border-b border-gray-200")
+        a(href="/services", class="block px-4 py-2 text-gray-600 font-medium hover:text-black") Services
+      li(class="border-b border-gray-200")
+        a(href="/work", class="block px-4 py-2 text-gray-600 font-medium hover:text-black") Work
+      li
+        a(href="/contact", class=" w-fit block px-4 py-2 mt-4 mb-2 ml-2 align-middle bg-button-color text-white rounded hover:bg-button-hover") Contact Us

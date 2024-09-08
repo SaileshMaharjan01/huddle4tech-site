@@ -1,0 +1,14 @@
+section.testimonials
+  .testimonial-container
+    button.chevron-left(onclick="prevTestimonial()") &laquo;
+    .testimonial-content.text-white
+      .flex.items-center.justify-center.mb-4
+        img#testimonial-image(src="" alt="Testimonial Image")
+      blockquote
+        p#testimonial-quote
+        footer
+          cite
+            strong#testimonial-name
+            |
+            #testimonial-position
+    button.chevron-right(onclick="nextTestimonial()") &raquo;
